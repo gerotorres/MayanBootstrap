@@ -1,0 +1,6 @@
+.carousel-inner img {
+    height: 900px; /* Ajusta la altura según lo que necesites */
+    object-fit: cover; /* Esto asegura que las imágenes se recorten proporcionalmente */
+    width: 100%; /* Asegura que ocupen todo el ancho disponible */
+  }
+  
