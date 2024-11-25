@@ -1,5 +1,10 @@
 
-
+.card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajusta el video para que ocupe todo el espacio disponible */
+  }
+  
 .carousel-inner img {
     height: 900px; /* Ajusta la altura según lo que necesites */
     object-fit: cover; /* Esto asegura que las imágenes se recorten proporcionalmente */
