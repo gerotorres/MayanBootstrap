@@ -1,3 +1,5 @@
+
+
 .carousel-inner img {
     height: 900px; /* Ajusta la altura según lo que necesites */
     object-fit: cover; /* Esto asegura que las imágenes se recorten proporcionalmente */
@@ -120,5 +122,47 @@ section {
   .btn-outline-light:hover {
     background-color: white;
     color: black;
+  }
+  
+
+  /* Reviews */
+
+.bg-reviews {
+    background-image: url('../images/pexels-maria-daniela-garcia-nogueira-555699319-16741472.jpg'); /* Reemplaza con tu imagen */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* Color del texto blanco */
+    height: 100vh; /* Ajusta esta altura según necesites */
+    padding-top: 50px; /* Añade algo de espacio superior */
+    padding-bottom: 50px; /* Añade algo de espacio inferior */
+  }
+  .bg-reviews h5 {
+    color: #000000; /* Negro */
+  }
+  
+  /* Estilo para el texto */
+  h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+
+  /* contact us */
+
+  .bg-contact {
+    background-image: url('../images/pexels-ricardo-fortiz-3566261-5339904.jpg'); /* Ruta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    padding: 50px 0; /* Ajusta los espacios superior e inferior */
+  }
+
+  .bg-contact > * {
+    position: relative;
+    z-index: 2;
   }
   
