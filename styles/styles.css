@@ -151,32 +151,6 @@ section {
   }
   
 
-  /* Reviews */
-
-.bg-reviews {
-    background-image: url('../images/pexels-maria-daniela-garcia-nogueira-555699319-16741472.jpg'); /* Reemplaza con tu imagen */
-    background-size: cover;
-    background-position: center;
-    color: #ffffff; /* Color del texto blanco */
-    height: 100vh; /* Ajusta esta altura según necesites */
-    padding-top: 50px; /* Añade algo de espacio superior */
-    padding-bottom: 50px; /* Añade algo de espacio inferior */
-  }
-  .bg-reviews h5 {
-    color: #000000; /* Negro */
-  }
-  
-  /* Estilo para el texto */
-  h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  }
-  
-  p {
-    font-size: 1.3rem;
-    line-height: 1.6;
-    text-align: justify;
-  }
-  
 
   /* contact us */
 
@@ -192,3 +166,79 @@ section {
     z-index: 2;
   }
   
+  /* Reviews */
+/* Fondo general de la sección */
+.reviews-section {
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 80px 10%; /* Espaciado amplio */
+  text-align: center;
+}
+
+/* Título */
+.reviews-section h2 {
+  color: #333333; /* Gris oscuro */
+  font-size: 3rem; /* Título más grande */
+  margin-bottom: 60px; /* Más separación con las tarjetas */
+  font-weight: 700; /* Más énfasis */
+}
+
+/* Contenedor de tarjetas */
+.reviews-container {
+  display: flex;
+  justify-content: space-between; /* Espaciado uniforme entre tarjetas */
+  gap: 2rem; /* Espacio horizontal entre tarjetas */
+  flex-wrap: wrap; /* Las tarjetas se acomodan en filas si no hay espacio */
+  max-width: 1200px; /* Limita el ancho máximo */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Tarjetas */
+.review-card {
+  background-color: #e6f7ff; /* Azul claro */
+  border: 1px solid #b3e5fc; /* Borde azul más claro */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 40px; /* Más espacio dentro de las tarjetas */
+  flex: 1; /* Las tarjetas ocupan espacio proporcional */
+  min-width: 300px; /* Asegura un tamaño mínimo */
+  max-width: 370px; /* Tamaño máximo */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover interactivo */
+.review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto dentro de las tarjetas */
+.review-card p {
+  color: #555555; /* Gris intermedio */
+  font-size: 1.2rem; /* Texto más grande */
+  line-height: 1.8; /* Más espacio entre líneas */
+  font-style: italic;
+}
+
+/* Nombres */
+.review-card h5 {
+  color: #006699; /* Azul oscuro */
+  font-size: 1.3rem;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .reviews-container {
+    flex-direction: column; /* Tarjetas en columna en pantallas pequeñas */
+    gap: 20px; /* Espaciado vertical entre tarjetas */
+  }
+
+  .review-card {
+    max-width: 100%; /* Ocupa todo el ancho del contenedor */
+  }
+
+  .reviews-section h2 {
+    font-size: 2.5rem; /* Reduce el título */
+  }
+}
